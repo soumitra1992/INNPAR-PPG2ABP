@@ -1,6 +1,6 @@
 # INN-PAR: Invertible Neural Network for PPG to ABP Reconstruction
 
-[arxiv](https://arxiv.org/pdf/2409.09021)
+[Arxiv](https://arxiv.org/pdf/2409.09021) [Paper][https://ieeexplore.ieee.org/document/10888915]
 
 > **Abstract:** *Non-invasive and continuous blood pressure (BP) monitoring is essential for the early prevention of many cardiovascular diseases. Estimating arterial blood pressure (ABP) from photoplethysmography (PPG) has emerged as a promising solution. However, existing deep learning approaches for PPG-to-ABP reconstruction (PAR) encounter certain information loss, impacting the precision of the reconstructed signal. To overcome this limitation, we introduce an invertible neural network for PPG to ABP reconstruction (INN-PAR), which employs a series of invertible blocks to jointly learn the mapping between PPG and its gradient with the ABP signal and its gradient. INN-PAR efficiently captures both forward and inverse mappings simultaneously, thereby preventing information loss. By integrating signal gradients into the learning process, INN-PAR enhances the network’s ability to capture essential high-frequency details, leading to more accurate signal reconstruction. Moreover, we propose a multi-scale convolution module (MSCM) within the invertible block, enabling the model to learn features across multiple scales effectively. We have experimented on two benchmark datasets, which show that INN-PAR significantly outperforms the state-of-the-art methods in both waveform reconstruction and BP measurement accuracy.* 
 
@@ -69,10 +69,13 @@ python test.py
 If you find the code helpful in your research or work, please cite the following paper.
 
 ```
-@article{kundu2024inn,
-  title={INN-PAR: Invertible Neural Network for PPG to ABP Reconstruction},
+@INPROCEEDINGS{10888915,
   author={Kundu, Soumitra and Panda, Gargi and Bhattacharya, Saumik and Routray, Aurobinda and Guha, Rajlakshmi},
-  journal={arXiv preprint arXiv:2409.09021},
-  year={2024}
-}
+  booktitle={ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={INN-PAR: Invertible Neural Network for PPG to ABP Reconstruction}, 
+  year={2025},
+  pages={1-5},
+  keywords={Deep learning;Accuracy;Convolution;Prevention and mitigation;Neural networks;Photoplethysmography;Signal reconstruction;Physiology;Speech processing;Monitoring;PPG;ABP;waveform reconstruction;invertible neural network},
+  doi={10.1109/ICASSP49660.2025.10888915}}
+
 ```
